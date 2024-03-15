@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" type="module"></script>
+  <title>NewsPaper - Public - Startpage</title>
+</head>
+<body>
+  <header>
+    <h1>Aktuelle Nachrichten</h1>
+    <nav>
+      <a>Nav-Item</a>
+      <a>Nav-Item</a>
+      <a>Nav-Item</a>
+    </nav>
+  </header>
+
+
+
+  <main>
+    <form class="welcome" method="POST">
+      <h3>Nachrichten suchen:</h3>
+      <div class="filterItem">
+        <p>Land wählen:</p>
+        <select id="selectCountry">
+          <option value="at" selected>Österreich</option>
+          <option value="de">Deutschland</option>
+        </select>
+      </div>
+      <div class="filterItem">
+        <p>Kategorie wählen:</p>
+        <select id="selectCategory">
+          <option value="general" selected>Allgemeine Nachrichten</option>
+          <option value="business">Business</option>
+          <option value="entertainment">Unterhaltung</option>
+          <option value="health">Gesundheit</option>
+          <option value="science">Wissenschaft</option>
+          <option value="sports">Sport</option>
+          <option value="technology">Technik</option>
+        </select>
+      </div>
+      <div class="filterItem">
+        <p>Nachrichten Sortieren:</p>
+        <select id="sortNews">
+          <option value="null"selected>Keine Einschränkungen</option>
+          <option value="popularity" >Beliebteste zuerst</option>
+        </select>
+      </div>
+      <div class="filterItem">
+        <p>Quelle wählen:</p>
+        <select id="selectSource">
+          <option value="null" selected>Keine Einschränkungen</option>
+          <option value="orf">ORF</option>
+          <option value="salzburg24">Salzburg24</option>
+          <option value="unzensuriert">Unzensuriert</option>
+          <option value="ots">OTS</option>
+          <option value="kurier">Kurier</option>
+          <option value="volksblatt">OÖ Volksblatt</option>
+        </select>
+      </div>
+      <button type="submit" id="formBtn">Suchen</button>
+    </form>
+    <section id="newsSection"></section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
